@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/robotjs.png?downloads=true)](https://www.npmjs.com/package/robotjs)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-robotjs/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-robotjs_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-robotjs/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-robotjs/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-robotjs_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-robotjs/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-robotjs/build/screenCapture.npmPackageListing.svg)
 
