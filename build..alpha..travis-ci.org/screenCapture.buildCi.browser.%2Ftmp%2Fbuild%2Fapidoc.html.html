@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/octalmage/robotjs"
-
-    >robotjs (v0.4.7)</a>
+    <a href="https://github.com/octalmage/robotjs">robotjs (v0.4.7)</a>
 </h1>
 <h4>Node.js Desktop Automation.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.robotjs">module robotjs</a><ol>
 
@@ -542,8 +535,8 @@
 module.exports.screen.capture = function(x, y, width, height)
 {
 //If coords have been passed, use them.
-if (typeof x !== &#x22;undefined&#x22; &#x26;&#x26; typeof y !== &#x22;undefined&#x22; &#x26;&#x26; typeof width !== &#x22;undefined
-&#x22; &#x26;&#x26; typeof height !== &#x22;undefined&#x22;)
+if (typeof x !== "undefined" &amp;&amp; typeof y !== "undefined" &amp;&amp; typeof width !== "undefined
+" &amp;&amp; typeof height !== "undefined")
 {
     b = robotjs.<span class="apidocCodeKeywordSpan">captureScreen</span>(x, y, width, height);
 }
@@ -613,14 +606,14 @@ module.exports.screen.capture = function(x, y, width, height)
 
 ```JavaScript
 // Get pixel color under the mouse.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Get mouse position.
 var mouse = robot.<span class="apidocCodeKeywordSpan">getMousePos</span>();
 
 // Get pixel color in hex format.
 var hex = robot.getPixelColor(mouse.x, mouse.y);
-console.log(&#x22;#&#x22; + hex + &#x22; at x:&#x22; + mouse.x + &#x22; y:&#x22; + mouse.y);
+console.log("#" + hex + " at x:" + mouse.x + " y:" + mouse.y);
 ```
 Read the [Wiki](https://github.com/octalmage/robotjs/wiki) for more information!
 ...</pre></li>
@@ -638,14 +631,14 @@ Read the [Wiki](https://github.com/octalmage/robotjs/wiki) for more information!
     <li>description and source-code<pre class="apidocCodePre">getPixelColor = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 // Get pixel color under the mouse.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Get mouse position.
 var mouse = robot.getMousePos();
 
 // Get pixel color in hex format.
 var hex = robot.<span class="apidocCodeKeywordSpan">getPixelColor</span>(mouse.x, mouse.y);
-console.log(&#x22;#&#x22; + hex + &#x22; at x:&#x22; + mouse.x + &#x22; y:&#x22; + mouse.y);
+console.log("#" + hex + " at x:" + mouse.x + " y:" + mouse.y);
 ```
 Read the [Wiki](https://github.com/octalmage/robotjs/wiki) for more information!
 
@@ -668,7 +661,7 @@ The [RobotJS API](https://github.com/octalmage/robotjs/wiki/Syntax) is contained
     <li>description and source-code<pre class="apidocCodePre">getScreenSize = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 // Move the mouse across the screen as a sine wave.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Speed up the mouse.
 robot.setMouseDelay(2);
@@ -678,7 +671,7 @@ var screenSize = robot.<span class="apidocCodeKeywordSpan">getScreenSize</span>(
 var height = (screenSize.height / 2) - 10;
 var width = screenSize.width;
 
-for (var x = 0; x &#x3c; width; x++)
+for (var x = 0; x &lt; width; x++)
 {
 	y = height * Math.sin((twoPI * x) / width) + height;
 	robot.moveMouse(x, y);
@@ -709,21 +702,21 @@ for (var x = 0; x &#x3c; width; x++)
     <ul>
     <li>description and source-code<pre class="apidocCodePre">keyTap = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-// Type &#x22;Hello World&#x22; then press enter.
-var robot = require(&#x22;robotjs&#x22;);
+// Type "Hello World" then press enter.
+var robot = require("robotjs");
 
-// Type &#x22;Hello World&#x22;.
-robot.typeString(&#x22;Hello World&#x22;);
+// Type "Hello World".
+robot.typeString("Hello World");
 
 // Press enter.
-robot.<span class="apidocCodeKeywordSpan">keyTap</span>(&#x22;enter&#x22;);
+robot.<span class="apidocCodeKeywordSpan">keyTap</span>("enter");
 ```
 
 ##### [Screen](https://github.com/octalmage/robotjs/wiki/Syntax#screen)
 
 ```JavaScript
 // Get pixel color under the mouse.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 ...</pre></li>
     </ul>
 
@@ -781,7 +774,7 @@ var screenSize = robot.getScreenSize();
 var height = (screenSize.height / 2) - 10;
 var width = screenSize.width;
 
-for (var x = 0; x &#x3c; width; x++)
+for (var x = 0; x &lt; width; x++)
 {
 	y = height * Math.sin((twoPI * x) / width) + height;
 	robot.<span class="apidocCodeKeywordSpan">moveMouse</span>(x, y);
@@ -791,7 +784,7 @@ for (var x = 0; x &#x3c; width; x++)
 ##### [Keyboard](https://github.com/octalmage/robotjs/wiki/Syntax#keyboard)
 
 ```JavaScript
-// Type &#x22;Hello World&#x22; then press enter.
+// Type "Hello World" then press enter.
 ...</pre></li>
     </ul>
 
@@ -820,7 +813,7 @@ for (var x = 0; x &#x3c; width; x++)
     <li>description and source-code<pre class="apidocCodePre">screen.capture = function (x, y, width, height)
 {
     //If coords have been passed, use them.
-    if (typeof x !== &#x22;undefined&#x22; &#x26;&#x26; typeof y !== &#x22;undefined&#x22; &#x26;&#x26; typeof width !== &#x22;undefined&#x22; &#x26;&#x26; typeof height !== &#x22;undefined&#x22;)
+    if (typeof x !== "undefined" &amp;&amp; typeof y !== "undefined" &amp;&amp; typeof width !== "undefined" &amp;&amp; typeof height !== "undefined")
     {
         b = robotjs.captureScreen(x, y, width, height);
     }
@@ -871,11 +864,11 @@ for (var x = 0; x &#x3c; width; x++)
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setMouseDelay = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-&#x3c;p align=&#x22;center&#x22;&#x3e;&#x3c;img src=&#x22;https://cldup.com/lugVjjAkEi.gif&#x22;&#x3e;&#x3c;/p&#x3e;
+&lt;p align="center"&gt;&lt;img src="https://cldup.com/lugVjjAkEi.gif"&gt;&lt;/p&gt;
 
 ```JavaScript
 // Move the mouse across the screen as a sine wave.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Speed up the mouse.
 robot.<span class="apidocCodeKeywordSpan">setMouseDelay</span>(2);
@@ -885,7 +878,7 @@ var screenSize = robot.getScreenSize();
 var height = (screenSize.height / 2) - 10;
 var width = screenSize.width;
 
-for (var x = 0; x &#x3c; width; x++)
+for (var x = 0; x &lt; width; x++)
 ...</pre></li>
     </ul>
 
@@ -916,14 +909,14 @@ for (var x = 0; x &#x3c; width; x++)
 ##### [Keyboard](https://github.com/octalmage/robotjs/wiki/Syntax#keyboard)
 
 ```JavaScript
-// Type &#x22;Hello World&#x22; then press enter.
-var robot = require(&#x22;robotjs&#x22;);
+// Type "Hello World" then press enter.
+var robot = require("robotjs");
 
-// Type &#x22;Hello World&#x22;.
-robot.<span class="apidocCodeKeywordSpan">typeString</span>(&#x22;Hello World&#x22;);
+// Type "Hello World".
+robot.<span class="apidocCodeKeywordSpan">typeString</span>("Hello World");
 
 // Press enter.
-robot.keyTap(&#x22;enter&#x22;);
+robot.keyTap("enter");
 ```
 
 ##### [Screen](https://github.com/octalmage/robotjs/wiki/Syntax#screen)
@@ -966,8 +959,8 @@ robot.keyTap(&#x22;enter&#x22;);
 module.exports.screen.capture = function(x, y, width, height)
 {
 //If coords have been passed, use them.
-if (typeof x !== &#x22;undefined&#x22; &#x26;&#x26; typeof y !== &#x22;undefined&#x22; &#x26;&#x26; typeof width !== &#x22;undefined
-&#x22; &#x26;&#x26; typeof height !== &#x22;undefined&#x22;)
+if (typeof x !== "undefined" &amp;&amp; typeof y !== "undefined" &amp;&amp; typeof width !== "undefined
+" &amp;&amp; typeof height !== "undefined")
 {
     b = robotjs.<span class="apidocCodeKeywordSpan">captureScreen</span>(x, y, width, height);
 }
@@ -1052,14 +1045,14 @@ module.exports.screen.capture = function(x, y, width, height)
 
 ```JavaScript
 // Get pixel color under the mouse.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Get mouse position.
 var mouse = robot.<span class="apidocCodeKeywordSpan">getMousePos</span>();
 
 // Get pixel color in hex format.
 var hex = robot.getPixelColor(mouse.x, mouse.y);
-console.log(&#x22;#&#x22; + hex + &#x22; at x:&#x22; + mouse.x + &#x22; y:&#x22; + mouse.y);
+console.log("#" + hex + " at x:" + mouse.x + " y:" + mouse.y);
 ```
 Read the [Wiki](https://github.com/octalmage/robotjs/wiki) for more information!
 ...</pre></li>
@@ -1082,14 +1075,14 @@ Read the [Wiki](https://github.com/octalmage/robotjs/wiki) for more information!
     <li>description and source-code<pre class="apidocCodePre">getPixelColor = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 // Get pixel color under the mouse.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Get mouse position.
 var mouse = robot.getMousePos();
 
 // Get pixel color in hex format.
 var hex = robot.<span class="apidocCodeKeywordSpan">getPixelColor</span>(mouse.x, mouse.y);
-console.log(&#x22;#&#x22; + hex + &#x22; at x:&#x22; + mouse.x + &#x22; y:&#x22; + mouse.y);
+console.log("#" + hex + " at x:" + mouse.x + " y:" + mouse.y);
 ```
 Read the [Wiki](https://github.com/octalmage/robotjs/wiki) for more information!
 
@@ -1117,7 +1110,7 @@ The [RobotJS API](https://github.com/octalmage/robotjs/wiki/Syntax) is contained
     <li>description and source-code<pre class="apidocCodePre">getScreenSize = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 // Move the mouse across the screen as a sine wave.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Speed up the mouse.
 robot.setMouseDelay(2);
@@ -1127,7 +1120,7 @@ var screenSize = robot.<span class="apidocCodeKeywordSpan">getScreenSize</span>(
 var height = (screenSize.height / 2) - 10;
 var width = screenSize.width;
 
-for (var x = 0; x &#x3c; width; x++)
+for (var x = 0; x &lt; width; x++)
 {
 	y = height * Math.sin((twoPI * x) / width) + height;
 	robot.moveMouse(x, y);
@@ -1168,21 +1161,21 @@ for (var x = 0; x &#x3c; width; x++)
     <ul>
     <li>description and source-code<pre class="apidocCodePre">keyTap = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-// Type &#x22;Hello World&#x22; then press enter.
-var robot = require(&#x22;robotjs&#x22;);
+// Type "Hello World" then press enter.
+var robot = require("robotjs");
 
-// Type &#x22;Hello World&#x22;.
-robot.typeString(&#x22;Hello World&#x22;);
+// Type "Hello World".
+robot.typeString("Hello World");
 
 // Press enter.
-robot.<span class="apidocCodeKeywordSpan">keyTap</span>(&#x22;enter&#x22;);
+robot.<span class="apidocCodeKeywordSpan">keyTap</span>("enter");
 ```
 
 ##### [Screen](https://github.com/octalmage/robotjs/wiki/Syntax#screen)
 
 ```JavaScript
 // Get pixel color under the mouse.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 ...</pre></li>
     </ul>
 
@@ -1260,7 +1253,7 @@ var screenSize = robot.getScreenSize();
 var height = (screenSize.height / 2) - 10;
 var width = screenSize.width;
 
-for (var x = 0; x &#x3c; width; x++)
+for (var x = 0; x &lt; width; x++)
 {
 	y = height * Math.sin((twoPI * x) / width) + height;
 	robot.<span class="apidocCodeKeywordSpan">moveMouse</span>(x, y);
@@ -1270,7 +1263,7 @@ for (var x = 0; x &#x3c; width; x++)
 ##### [Keyboard](https://github.com/octalmage/robotjs/wiki/Syntax#keyboard)
 
 ```JavaScript
-// Type &#x22;Hello World&#x22; then press enter.
+// Type "Hello World" then press enter.
 ...</pre></li>
     </ul>
 
@@ -1309,7 +1302,7 @@ for (var x = 0; x &#x3c; width; x++)
     <li>description and source-code<pre class="apidocCodePre">capture = function (x, y, width, height)
 {
     //If coords have been passed, use them.
-    if (typeof x !== &#x22;undefined&#x22; &#x26;&#x26; typeof y !== &#x22;undefined&#x22; &#x26;&#x26; typeof width !== &#x22;undefined&#x22; &#x26;&#x26; typeof height !== &#x22;undefined&#x22;)
+    if (typeof x !== "undefined" &amp;&amp; typeof y !== "undefined" &amp;&amp; typeof width !== "undefined" &amp;&amp; typeof height !== "undefined")
     {
         b = robotjs.captureScreen(x, y, width, height);
     }
@@ -1340,7 +1333,7 @@ for (var x = 0; x &#x3c; width; x++)
     <li>description and source-code<pre class="apidocCodePre">capture = function (x, y, width, height)
 {
     //If coords have been passed, use them.
-    if (typeof x !== &#x22;undefined&#x22; &#x26;&#x26; typeof y !== &#x22;undefined&#x22; &#x26;&#x26; typeof width !== &#x22;undefined&#x22; &#x26;&#x26; typeof height !== &#x22;undefined&#x22;)
+    if (typeof x !== "undefined" &amp;&amp; typeof y !== "undefined" &amp;&amp; typeof width !== "undefined" &amp;&amp; typeof height !== "undefined")
     {
         b = robotjs.captureScreen(x, y, width, height);
     }
@@ -1406,11 +1399,11 @@ for (var x = 0; x &#x3c; width; x++)
     <ul>
     <li>description and source-code<pre class="apidocCodePre">setMouseDelay = function () { [native code] }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-&#x3c;p align=&#x22;center&#x22;&#x3e;&#x3c;img src=&#x22;https://cldup.com/lugVjjAkEi.gif&#x22;&#x3e;&#x3c;/p&#x3e;
+&lt;p align="center"&gt;&lt;img src="https://cldup.com/lugVjjAkEi.gif"&gt;&lt;/p&gt;
 
 ```JavaScript
 // Move the mouse across the screen as a sine wave.
-var robot = require(&#x22;robotjs&#x22;);
+var robot = require("robotjs");
 
 // Speed up the mouse.
 robot.<span class="apidocCodeKeywordSpan">setMouseDelay</span>(2);
@@ -1420,7 +1413,7 @@ var screenSize = robot.getScreenSize();
 var height = (screenSize.height / 2) - 10;
 var width = screenSize.width;
 
-for (var x = 0; x &#x3c; width; x++)
+for (var x = 0; x &lt; width; x++)
 ...</pre></li>
     </ul>
 
@@ -1461,14 +1454,14 @@ for (var x = 0; x &#x3c; width; x++)
 ##### [Keyboard](https://github.com/octalmage/robotjs/wiki/Syntax#keyboard)
 
 ```JavaScript
-// Type &#x22;Hello World&#x22; then press enter.
-var robot = require(&#x22;robotjs&#x22;);
+// Type "Hello World" then press enter.
+var robot = require("robotjs");
 
-// Type &#x22;Hello World&#x22;.
-robot.<span class="apidocCodeKeywordSpan">typeString</span>(&#x22;Hello World&#x22;);
+// Type "Hello World".
+robot.<span class="apidocCodeKeywordSpan">typeString</span>("Hello World");
 
 // Press enter.
-robot.keyTap(&#x22;enter&#x22;);
+robot.keyTap("enter");
 ```
 
 ##### [Screen](https://github.com/octalmage/robotjs/wiki/Syntax#screen)
@@ -1502,3 +1495,4 @@ robot.keyTap(&#x22;enter&#x22;);
     ]
 </div>
 </div>
+</body></html>
