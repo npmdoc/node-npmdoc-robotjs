@@ -1,4 +1,7 @@
-# api documentation for  [robotjs (v0.4.7)](https://github.com/octalmage/robotjs)  [![npm package](https://img.shields.io/npm/v/npmdoc-robotjs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-robotjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-robotjs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-robotjs)
+# npmdoc-robotjs
+
+#### basic api documentation for  [robotjs (v0.4.7)](https://github.com/octalmage/robotjs)  [![npm package](https://img.shields.io/npm/v/npmdoc-robotjs.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-robotjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-robotjs.svg)](https://travis-ci.org/npmdoc/node-npmdoc-robotjs)
+
 #### Node.js Desktop Automation.
 
 [![NPM](https://nodei.co/npm/robotjs.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/robotjs)
@@ -76,7 +79,8 @@
         "test": "node test/all.js"
     },
     "typings": "index.d.ts",
-    "version": "0.4.7"
+    "version": "0.4.7",
+    "bin": {}
 }
 ```
 
